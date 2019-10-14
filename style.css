@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4e5860;
+}
+
+.widget{
+    width: 20.26%;
+    height: 47.88%;
+    box-shadow: 0 21px 20px 1px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.07);
+    border-radius: 0px 0px 29px 29px;
+}
+
+.widget-header{
+    height: 51.94%;
+    background-color: #f1f8f9;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+.widget-header__top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 28.22%;
+}
+
+.widget-header__img-refresh{
+    height: 27.94%;
+    margin-right: 4.37%;
+}
+
+.widget-header__middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50.21%;
+}
+.widget-header__temprature-wrap{
+    display: none;
+    justify-content: flex-end;
+    align-self: center;
+    width: 27.98%;
+    color: #8d9396;
+    font-family: "Proxima Nova";
+    font-size: 3.02vmax;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.widget-header__img-weather{
+    height: 100%;
+}
+
+.widget-header__bottom{
+    height: 21.57%;
+}
+
+.widget-body{
+    height: 18.75%;
+    background-color: #f1f8f9;
+}
+
+.widget-body__top{
+    display: flex;
+    justify-content: space-between;
+    height: 77.53%;
+}
+
+.widget-body__temprature-wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 27.98%;
+    color: #8d9396;
+    font-family: "Proxima Nova";
+    font-size: 3.02vmax;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.widget-body__city-weather-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 54.02%;
+}
+.widget-body__weather{
+    color: #bac2c6;
+    font-family: "Source Sans Pro";
+    font-size: 1.25vmax;
+    font-weight: 300;
+}
+
+.widget-body__city{
+    color: #a2a9ad;
+    font-family: "Source Sans Pro - Semibold";
+    font-size: 0.83vmax;
+    font-weight: 600;
+}
+
+.widget-body__date-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 18%;
+    height: 100%;
+    background-color: #54bae6;
+}
+
+.widget-body__month{
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.73vmax;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.widget-body__date{
+    text-align: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 0.94vmax;
+    font-weight: 700;
+}
+
+.widget-body__bottom{
+    height: 22.47%;
+}
+
+.widget-footer{
+    height: 29.31%;
+    border-radius: 0 0 10px 10px;
+    background-color: #2e3335;
+}
+
+
+.widget-footer__top{
+    height: 64.71%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.widget-footer__feature-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.widget-footer__feature-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18.42%;
+}
+
+.widget-footer__feature-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17.71%;
+}
+
+.widget-footer__feature-img{
+    height: 40%;
+    width: 35%;
+}
+
+.widget-footer__feature-value{
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 0.73vmax;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.widget-footer__bottom{
+    display: flex;
+    justify-content: center;
+    height: 35.29%;
+}
+
+.widget-footer__slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11.05%;
+}
+
+.widget-footer__slider-img_check{
+    height: 18.6%;
+}
+
+.widget-footer__slider-img{
+    height: 18.6%;
+}
+
+@media (max-width: 1440px) {
+
+    .widget-footer__feature-value{
+       font-size: 0.9vmax;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .widget-body__weather{
+       font-size: 1.5vmax;
+    }
+    
+    .widget-body__city{
+       font-size: 1vmax;
+    }
+
+    .widget-footer__feature-left {
+        width: 30%;
+    }
+    .widget-footer__feature-value{
+        font-size: 1.1vmax;
+     }
+
+}
+
+@media (max-width: 768px) {
+
+    .widget{
+        height: 32%;
+    }
+    
+    .widget-header{
+        height: 55%;
+      }
+
+    .widget-header__middle{
+        height: 65%;
+        justify-content: space-around;
+    }
+
+    .widget-header__temprature-wrap{
+        width: 40%;
+        display: flex;
+        font-size: 5vmax;
+    }
+
+    .widget-header__img-weather{
+        height: 70%;
+    }
+
+    .widget-header__bottom{
+        display: none;
+    }
+
+    .widget-body{
+        height: 15%;
+    }
+
+    .widget-body__top{
+        height: 100%;
+    }
+
+    .widget-body__temprature-wrap{
+        display: none;
+    }
+
+    .widget-body__city-weather-wrap{
+        height: 100%;
+        width: 75%;
+    }
+    .widget-body__weather{
+        font-size: 2vmax;
+    }
+    
+    .widget-body__city{
+        font-size: 1.3vmax;
+    }
+
+    .widget-body__bottom{
+        display: none;
+    }
+
+    .widget-footer{
+        height: 30%;
+    }
+
+    .widget-footer__top{
+        height: 45%;
+        justify-content: space-around;
+    }
+
+    .widget-footer__feature-left {
+        width: 32%;
+    }
+
+    .widget-footer__feature-middle {
+        width: 25%;
+    }
+
+    .widget-footer__feature-right {
+        width: 25%;
+    }
+    .widget-footer__feature-value{
+        font-size: 1.1vmax;
+     }
+
+}
+  @media (min-width: 500px) and (max-width: 767px) {
+    
+    .widget{
+        width: 30%;
+    }
+
+    
+    .widget-body__month{
+        font-size: 0.9vmax;
+    }
+    .widget-body__date{
+       font-size: 1vmax;
+       }
+
+}
+
+@media (max-width: 499px) {
+    
+    .widget{
+        width: 50%;
+    }
+
+    
+    .widget-body__month{
+        font-size: 0.9vmax;
+    }
+    .widget-body__date{
+       font-size: 1vmax;
+       }
+
+}
